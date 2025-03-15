@@ -1,4 +1,4 @@
 ///
-library basic_navigation;
+library;
 
 export './src/app.dart';
