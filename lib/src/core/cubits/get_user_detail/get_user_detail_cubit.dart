@@ -1,8 +1,4 @@
-import 'package:equatable/equatable.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../../models/user_model/user_model.dart';
-import '../../services/user_service.dart';
+import '../../../../go_router_tutorial.dart';
 
 part 'get_user_detail_state.dart';
 

@@ -9,8 +9,11 @@ class UserService {
 
   Future<List<UserModel>> getUsers() async {
     try {
-      final response = await dio.get<List<dynamic>>('https://jsonplaceholder.typicode.com/users');
-      final userList = response.data?.map((e) => UserModel.fromMap(e as Map<String, dynamic>)).toList();
+      final response = await dio
+          .get<List<dynamic>>('https://jsonplaceholder.typicode.com/users');
+      final userList = response.data
+          ?.map((e) => UserModel.fromMap(e as Map<String, dynamic>))
+          .toList();
 
       return userList ?? [];
     } catch (e) {
@@ -20,7 +23,8 @@ class UserService {
 
   Future<UserModel> getUser(int id) async {
     try {
-      final response = await dio.get<Map<String, dynamic>>('https://jsonplaceholder.typicode.com/users/$id');
+      final response = await dio.get<Map<String, dynamic>>(
+          'https://jsonplaceholder.typicode.com/users/$id');
       final user = UserModel.fromMap(response.data ?? {});
 
       return user;
