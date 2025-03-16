@@ -244,6 +244,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.12.0"
+  stateful_shell_route:
+    dependency: "direct main"
+    description:
+      path: "examples/stateful_shell_route"
+      relative: true
+    source: path
+    version: "0.0.1"
   stream_channel:
     dependency: transitive
     description:
